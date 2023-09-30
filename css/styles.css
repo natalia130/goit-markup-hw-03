@@ -97,8 +97,6 @@ address {
   gap: 40px;
 }
 .header-menu-item {
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .header-menu-link {
   color: #2e2f42;
@@ -106,6 +104,8 @@ address {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-menu-link:hover,
 .header-menu-link:focus {
@@ -165,6 +165,7 @@ address {
   min-width: 169px;
   height: 56px;
   border: none;
+  border-radius: 4px;
   margin: 0 auto;
 }
 
@@ -221,13 +222,13 @@ address {
 .team-item {
   background-color: #ffffff;
   width: calc((100% - 3 * 24) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-img {
 }
 .team-member {
   padding-top: 32px;
   padding-bottom: 32px;
-  border-radius: 0px 0px 4px 4px;
 }
 .team-subtitle {
   color: #2e2f42;
