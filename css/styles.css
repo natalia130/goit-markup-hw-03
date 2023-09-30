@@ -67,8 +67,6 @@ address {
 /** =============== HEADER =============== */
 .header {
   border-bottom: 1px solid #e7e9fc;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .header-container {
@@ -79,7 +77,6 @@ address {
 .header-navigation {
   display: flex;
   align-items: center;
-  gap: 76px;
 }
 .logo-header {
   color: #4d5ae5;
@@ -89,6 +86,7 @@ address {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .logo-header-color {
@@ -99,6 +97,8 @@ address {
   gap: 40px;
 }
 .header-menu-item {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-menu-link {
   color: #2e2f42;
@@ -134,9 +134,15 @@ address {
 /** =========== HERO ================ */
 .hero {
   background: #2e2f42;
-  padding: 188px 316px;
+  padding-top: 188px;
+  padding-bottom: 188px;
+  display: flex;
 }
-
+.container-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
 .hero-title {
   color: #fff;
   text-align: center;
@@ -144,9 +150,7 @@ address {
   line-height: 1.07;
   letter-spacing: 0.02em;
   margin: 0 auto;
-
   max-width: 496px;
-  margin-bottom: 48px;
 }
 .order-button {
   color: #fff;
@@ -157,9 +161,11 @@ address {
   letter-spacing: 0.04em;
   background: #4d5ae5;
   cursor: pointer;
-  padding: 16px 32px;
-  border-radius: 4px;
+  display: block;
+  min-width: 169px;
+  height: 56px;
   border: none;
+  margin: 0 auto;
 }
 
 .order-button:hover,
@@ -177,7 +183,7 @@ address {
   gap: 24px;
 }
 .features-item {
-  width: calc((100% - 3 * 24) / 4);
+  width: calc((100% - 3 * 24px) / 4);
 }
 .features-item-subtitle {
   color: #2e2f42;
@@ -206,7 +212,7 @@ address {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   margin: 0 auto;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .team-list {
   display: flex;
@@ -214,12 +220,14 @@ address {
 }
 .team-item {
   background-color: #ffffff;
-  padding-bottom: 32px;
-  border-radius: 0px 0px 4px 4px;
   width: calc((100% - 3 * 24) / 4);
 }
 .team-img {
-  margin-bottom: 32px;
+}
+.team-member {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-radius: 0px 0px 4px 4px;
 }
 .team-subtitle {
   color: #2e2f42;
@@ -228,7 +236,8 @@ address {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-bottom: 8px;
+  text-align: center;
+  margin-bottom: 8px;
 }
 .team-text {
   color: #434455;
@@ -236,6 +245,7 @@ address {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 /* ================================ */
 /* ================ OUR PORTFOLIO ================== */
@@ -248,7 +258,6 @@ address {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  margin: 0 auto;
   margin-bottom: 72px;
 }
 .portfolio-list {
@@ -258,12 +267,14 @@ address {
   gap: 48px 24px;
 }
 .portfolio-item {
-  padding-bottom: 32px;
-  border-bottom: 1px solid #e7e9fc;
   width: calc((100% - 2 * 24) / 3);
 }
 .portfolio-img {
-  padding-bottom: 32px;
+}
+.portfolio-project {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .portfolio-subtitle {
   color: #2e2f42;
@@ -271,27 +282,20 @@ address {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-  border-right: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
+  margin-bottom: 8px;
 }
 .portfolio-text {
   color: #434455;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-left: 16px;
-  padding-right: 16px;
-  border-right: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
 }
 /* ========================== */
 /* ================= FOOTER =========== */
 .footer {
   background: #2e2f42;
-  padding: 101.5px 864px 100px 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .logo-footer {
   color: #4d5ae5;
@@ -301,6 +305,8 @@ address {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .logo-footer-color {
   color: #f4f4fd;
@@ -311,5 +317,4 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
-  margin-top: 17.5px;
 }
